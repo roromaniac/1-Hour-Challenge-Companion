@@ -1,0 +1,257 @@
+title: 1 Hour Companion v2 
+description: REPLACE YOUR OVERRIDES EVERY TIME THERE'S AN UPDATE! Goes ABOVE the GoA and seed. Includes - Crazycatz00's Moose RAM Expansion | 1234567890num's Better Boss Scaling | DA's Dark Thorn Menu | Sonicshadowsilver2's Remove Swarm | Geek's Promise Charm edits | kareking1's Boss Gives EXP (with edits by Zeddikus) | JaredWeakstrike's 100 Acre Orb | JaredWeakstrike's Engine Core Skip 
+assets:
+# Lua Scripts
+- name: scripts/F266B00B GoA ROM.lua
+  method: copy
+  source:
+  - name: F266B00B GoA ROM.lua
+- name: scripts/DriveLogic.lua
+  method: copy
+  source:
+  - name: DriveLogic.lua
+#Moose
+- name: dll/KH2Moose.dll
+  method: copy
+  platform: pc
+  source:
+  - name: KH2Moose.dll
+  #Better Boss Scaling Various Stuff
+#- name: 00battle.bin
+#  method: binarc
+#  source:
+#  - name: enmp #Halve MCP's HP & Remove Terra and Datas' Fixed Levels
+#    type: list
+#    method: copy
+#    source:
+#    - name: Enmp.bin
+- name: ard/he03.ard
+  multi:
+  - name: ard/us/he03.ard
+  - name: ard/fr/he03.ard
+  - name: ard/gr/he03.ard
+  - name: ard/it/he03.ard
+  - name: ard/sp/he03.ard
+  method: binarc
+  source:
+  - name: btl
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he03/btl.script
+- name: ard/he05.ard
+  multi:
+  - name: ard/us/he05.ard
+  - name: ard/fr/he05.ard
+  - name: ard/gr/he05.ard
+  - name: ard/it/he05.ard
+  - name: ard/sp/he05.ard
+  method: binarc
+  source:
+  - name: btl
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he05/btl.script
+- name: ard/he06.ard
+  multi:
+  - name: ard/us/he06.ard
+  - name: ard/fr/he06.ard
+  - name: ard/gr/he06.ard
+  - name: ard/it/he06.ard
+  - name: ard/sp/he06.ard
+  method: binarc
+  source:
+  - name: btl
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he06/btl.script
+- name: ard/he07.ard
+  multi:
+  - name: ard/us/he07.ard
+  - name: ard/fr/he07.ard
+  - name: ard/gr/he07.ard
+  - name: ard/it/he07.ard
+  - name: ard/sp/he07.ard
+  method: binarc
+  source:
+  - name: btl
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he07/btl.script
+- name: ard/he10.ard
+  multi:
+  - name: ard/us/he10.ard
+  - name: ard/fr/he10.ard
+  - name: ard/gr/he10.ard
+  - name: ard/it/he10.ard
+  - name: ard/sp/he10.ard
+  method: binarc
+  source:
+  - name: btl
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he10/btl.script
+- name: ard/he11.ard
+  multi:
+  - name: ard/us/he11.ard
+  - name: ard/fr/he11.ard
+  - name: ard/gr/he11.ard
+  - name: ard/it/he11.ard
+  - name: ard/sp/he11.ard
+  method: binarc
+  source:
+  - name: btl
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he11/btl.script
+- name: ard/he15.ard
+  multi:
+  - name: ard/us/he15.ard
+  - name: ard/fr/he15.ard
+  - name: ard/gr/he15.ard
+  - name: ard/it/he15.ard
+  - name: ard/sp/he15.ard
+  method: binarc
+  source:
+  - name: btl
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he15/btl.script
+- name: ard/he16.ard
+  multi:
+  - name: ard/us/he16.ard
+  - name: ard/fr/he16.ard
+  - name: ard/gr/he16.ard
+  - name: ard/it/he16.ard
+  - name: ard/sp/he16.ard
+  method: binarc
+  source:
+  - name: btl
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he16/btl.script
+- name: ard/he17.ard
+  multi:
+  - name: ard/us/he17.ard
+  - name: ard/fr/he17.ard
+  - name: ard/gr/he17.ard
+  - name: ard/it/he17.ard
+  - name: ard/sp/he17.ard
+  method: binarc
+  source:
+  - name: btl
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he17/btl.script
+- name: ard/bb05.ard #Ballroom (Party Menu after Shadow Stalker)
+  multi:
+  - name: ard/jp/bb05.ard
+  - name: ard/us/bb05.ard
+  - name: ard/fr/bb05.ard
+  - name: ard/gr/bb05.ard
+  - name: ard/it/bb05.ard
+  - name: ard/sp/bb05.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/bb05/evt.script
+#Boss Gives EXP
+- name: 00battle.bin
+  method: binarc
+  source:
+  - name: enmp
+    type: list
+    method: listpatch
+    source:
+    - name: EnmpList.yml
+      type: enmp
+# Remove Swarm      
+- name: ard/mu07.ard 
+  multi: 
+  - name: ard/jp/mu07.ard
+  - name: ard/us/mu07.ard
+  - name: ard/fr/mu07.ard
+  - name: ard/gr/mu07.ard
+  - name: ard/it/mu07.ard
+  - name: ard/sp/mu07.ard
+  method: binarc
+  source:
+  - name: btl
+    type: AreaDataScript
+    method: areadatascript
+    source:
+    - name: ard/mu07btl.yml
+#Completion Mark Icon
+- name: remastered/itempic/item-226.imd/-0.dds
+  multi:
+  - name: remastered/itempic/item-226.imd/-0.dds
+  - name: remastered/itempic/item-226.imd/-0.dds
+  - name: remastered/itempic/item-226.imd/-0.dds
+  - name: remastered/itempic/item-226.imd/-0.dds
+  - name: remastered/itempic/item-226.imd/-0.dds
+  method: copy
+  source:
+  - name: remastered/itempic/item-226.imd/-0.dds
+# Comletion Mark Description  
+- name: msg/us/sys.bar
+  multi:
+  - name: msg/fr/sys.bar
+  - name: msg/gr/sys.bar
+  - name: msg/it/sys.bar
+  - name: msg/sp/sys.bar
+  method: binarc
+  source:
+  - name: sys
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/sys.yml
+      language: en
+
+#Good Oogie
+- name: obj/B_NM000.mdlx
+  method: copy
+  source:
+  - name: obj/B_NM000.mdlx
+
+# cor orb in pooh
+- name: ard/po00.ard #The Hundred Acre Wood (GoA Warp)
+  multi:
+  - name: ard/us/po00.ard
+  - name: ard/fr/po00.ard
+  - name: ard/gr/po00.ard
+  - name: ard/it/po00.ard
+  - name: ard/sp/po00.ard
+  method: binarc
+  source:
+  - name: m_20 #Combine Computer Spawns (Party)
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: m_20.yml
+- name: ard/hb26.ard #Garden of Assemblage (Various Stuff)
+  multi:
+  - name: ard/jp/hb26.ard
+  - name: ard/us/hb26.ard
+  - name: ard/fr/hb26.ard
+  - name: ard/gr/hb26.ard
+  - name: ard/it/hb26.ard
+  - name: ard/sp/hb26.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb26/evt.script  
