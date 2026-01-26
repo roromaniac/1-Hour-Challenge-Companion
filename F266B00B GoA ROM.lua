@@ -1251,12 +1251,12 @@ if ReadByte(Save+0x1E5E) > 0 then
 	end
 end
 --Faster Faster Oogie
-if Place == 0x090E and Events(0x37,0x37,0x37) then
-	print(ReadInt(Slot2+8))
-	WriteInt(Slot2+8,0)
-	WriteInt(Slot3+8,0)
-	WriteInt(Slot4+8,0)
-end
+--if Place == 0x090E and Events(0x37,0x37,0x37) then
+--	print(ReadInt(Slot2+8))
+--	WriteInt(Slot2+8,0)
+--	WriteInt(Slot3+8,0)
+--	WriteInt(Slot4+8,0)
+--end
 end
 
 function Ag()
