@@ -1,7 +1,7 @@
 --ROM Version
 --Last Update: v1.0.0.9 Epic & Steam addresses
 
-LUAGUI_NAME = 'GoA ROM Randomizer Build'
+LUAGUI_NAME = 'GoA ROM Randomizer Build - 1 Hour GOA'
 LUAGUI_AUTH = 'SonicShadowSilver2 (Ported by Num)'
 LUAGUI_DESC = 'A GoA build for use with the Randomizer. Requires ROM patching.'
 
@@ -186,9 +186,12 @@ elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
 		GameVersion = -1
 		print("Steam JP Version is outdated. Please update the game.")
 	end
+	Slot2  = Slot1 - NextSlot
+	Slot3  = Slot2 - NextSlot
+	Slot4  = Slot3 - NextSlot
 end
 if GameVersion ~= 0 then
-	--[[Slot2  = Slot1 - NextSlot
+	--[[
 	Slot3  = Slot2 - NextSlot
 	Slot4  = Slot3 - NextSlot
 	Slot5  = Slot4 - NextSlot
@@ -1251,12 +1254,12 @@ if ReadByte(Save+0x1E5E) > 0 then
 	end
 end
 --Faster Faster Oogie
---if Place == 0x090E and Events(0x37,0x37,0x37) then
---	print(ReadInt(Slot2+8))
---	WriteInt(Slot2+8,0)
---	WriteInt(Slot3+8,0)
---	WriteInt(Slot4+8,0)
---end
+if Place == 0x090E and Events(0x37,0x37,0x37) then
+	print(ReadInt(Slot2+8))
+	WriteInt(Slot2+8,0)
+	WriteInt(Slot3+8,0)
+	WriteInt(Slot4+8,0)
+end
 end
 
 function Ag()
