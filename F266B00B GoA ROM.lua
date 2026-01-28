@@ -370,6 +370,7 @@ end
 
 function GoA()
 --Clear Conditions
+local CustomObjectiveCount = ReadByte(Save+0x365B)
 if not SeedCleared then
 	local ObjectiveCount = ReadShort(BAR(Sys3,0x6,0x4F4),OnPC)
 	if ObjectiveCount == 0 then
@@ -385,7 +386,7 @@ end
 --Garden of Assemblage Rearrangement
 if Place == 0x1A04 then
 	--Open Promise Charm Path
-	if ReadByte(Save+0x363D) >= 5 and ReadByte(Save+0x3694) > 0 then --Seed Cleared & Promise Charm
+	if ((CustomObjectiveCount == 0 and SeedCleared) or (CustomObjectiveCount > 0 and ReadByte(Save+0x363D) >= CustomObjectiveCount)) and ReadByte(Save+0x3694) > 0 then --Seed Cleared & Promise Charm
 		WriteShort(BAR(ARD,0x06,0x05C),0x77A,OnPC) --Text
 	end
 	--Demyx's Portal Text
