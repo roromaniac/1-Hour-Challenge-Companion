@@ -2143,4 +2143,5 @@ Save+0x1EDE TWtNW Post-Story Save
 Save+0x1EDF TWtNW Progress
 Save+0x35C4 Ollete's Munny Pouch
 Save+0x35C5 Mickey's Munny Pouch
+Save+0x06B3 Custom Objectives Needed
 --]]
