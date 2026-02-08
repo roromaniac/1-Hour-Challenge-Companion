@@ -370,7 +370,7 @@ end
 
 function GoA()
 --Clear Conditions
-local CustomObjectiveCount = ReadByte(0x801000)
+local CustomObjectiveCount = ReadByte(Save+0x06B3)
 if not SeedCleared then
 	local ObjectiveCount = ReadShort(BAR(Sys3,0x6,0x4F4),OnPC)
 	if ObjectiveCount == 0 then
