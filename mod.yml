@@ -10,6 +10,10 @@ assets:
   method: copy
   source:
   - name: DriveLogic.lua
+- name: scripts/BonusSpeedUp.lua
+  method: copy
+  source:
+  - name: BonusSpeedUp.lua
 #Moose
 - name: dll/KH2Moose.dll
   method: copy
