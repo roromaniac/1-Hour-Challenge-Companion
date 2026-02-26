@@ -11964,9 +11964,11 @@ Olympus Coliseum:
         sp_ids:
           '392':
           - index: 0
+            ignored: true
             isboss: true
             name: Yuffie
           - index: 1
+            ignored: true
             isboss: true
             name: Leon
       b_a1:
@@ -12797,6 +12799,7 @@ Olympus Coliseum:
         sp_ids:
           '1850':
           - index: 0
+            ignored: true
             isboss: true
             name: Tifa
           - index: 1
@@ -13350,6 +13353,7 @@ Olympus Coliseum:
             isboss: true
             name: Tifa (1)
           - index: 1
+            ignored: true
             isboss: true
             name: Cloud
       b_j6:
